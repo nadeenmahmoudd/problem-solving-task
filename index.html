@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task 3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="container">
+  <h1 >Task 3 </h1>
+  <p>The matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 1]
+  ]   </p>
+  <p class="text-info">You can edit the matrix from the javascript file</p>
+  <!-- Exercise 1: Finding Recurring Numbers in a Matrix -->
+  <section id="exercise1">
+    <h2> 1- Find Recurring Numbers in a Matrix</h2>
+    <button onclick="showRecurringNumbers()">Click here to show Recurring numbers</button>
+    <div id="matrix-result" class="bg-light"></div>
+  </section>
+
+  <!-- Exercise 2: Calculating Prime Numbers in a Specified Range -->
+  <section id="exercise2">
+    <h2>2- Calculate Prime Numbers in a Range</h2>
+    <p>Enter in the inputs and the click to know the prime numbers between them</p>
+    <label for="start">From:</label>
+    <input type="number" id="start" class="form-control w-25"/>
+    <label for="end">To:</label>
+    <input type="number" id="end" class="form-control w-25" />
+    <button onclick="findPrimes()">Find Primes</button>
+    <div id="prime-result" class="bg-light"></div>
+  </section>
+
+  <!-- Exercise 3: Arranging Words in a Sentence According to Length -->
+  <section id="exercise3">
+    <h2>3- Arrange Words in a Sentence by Length</h2>
+    <p>Try to write sentence with diffrent words with diffrent lengths</p>
+    <input type="text" id="sentence" placeholder="Enter a sentence"  class="form-control w-25"/>
+    <button onclick="arrangeWords()">Arrange Words</button>
+    <div id="sentence-result" class="bg-light"></div>
+  </section>
+
+<section id="exercise4" class="mb-4">
+    <h2>4- Filter Array Using a Custom Function</h2>
+    <div class="mb-2">
+      <label for="array" class="form-label">Write array of numbers (comma-separated):</label>
+      <input type="text" id="array" placeholder="example: 1,2,3,4" class="form-control w-25" />
+    </div>
+    <div class="mb-2">
+      <label for="criteria" class="form-label">Criteria (e.g., even):</label>
+      <input type="text" id="criteria" placeholder="type: even or odd" class="form-control w-25" />
+    </div>
+    <button class="btn btn-primary" onclick="filterArray()">Filter Array</button>
+    <div id="filter-result" class="mt-2"></div>
+  </section>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
